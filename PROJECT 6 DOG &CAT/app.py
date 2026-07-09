@@ -17,6 +17,10 @@ st.set_page_config(
 # -------------------------
 model = joblib.load("cat_dog_model.pkl")
 
+
+IMG_SIZE = 64
+
+
 st.title("🐱 Cat vs Dog Image Classifier")
 st.write("Upload an image to predict whether it is a Cat or Dog.")
 
