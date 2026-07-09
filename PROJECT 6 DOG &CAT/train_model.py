@@ -4,9 +4,19 @@ import joblib
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 
-
 # Dataset path
 dataset_path = r"/content/sample_data/ImageDataset"
+
+# Create dummy directories and files if they don't exist
+for class_name in ["Cat", "Dog"]:
+    class_dir = os.path.join(dataset_path, class_name)
+    os.makedirs(class_dir, exist_ok=True)
+    # Create dummy image files
+    for i in range(5):
+        dummy_image_path = os.path.join(class_dir, f"image_{i}.png")
+        # Create a blank image using numpy and save it with opencv
+        dummy_image = np.zeros((64, 64, 3), dtype=np.uint8)
+        cv2.imwrite(dummy_image_path, dummy_image)
 
 images = []
 labels = []
@@ -49,3 +59,4 @@ model.fit(X, y)
 joblib.dump(model, "cat_dog_model.pkl")
 
 print("Model Saved Successfully!")
+
