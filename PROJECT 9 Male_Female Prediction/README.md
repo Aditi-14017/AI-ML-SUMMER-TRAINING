@@ -1,2 +1,3 @@
 # PROJECT-11-MALEFEMALE
-https://anshikamishra704-project-11-malefemale-app-fjkayv.streamlit.app/
+
+https://aditi-14017-male-female-prediction-app-en3tyb.streamlit.app/
