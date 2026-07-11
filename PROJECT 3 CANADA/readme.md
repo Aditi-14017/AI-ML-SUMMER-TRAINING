@@ -1,2 +1,2 @@
 PROJECT 3
-Deployment Link = https://anshii852-canada-per-capita-income-app-e3mf4j.streamlit.app/
+Deployment Link = https://aditi-14017-canada-app-i2gg3z.streamlit.app/
