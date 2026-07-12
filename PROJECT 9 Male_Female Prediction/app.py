@@ -33,7 +33,7 @@ if uploaded_file is not None:
     img = np.array(img)/255.0
     img = np.expand_dims(img, axis=0)
 
-    prediction = model.predict(img)
+   
 
     if prediction[0][0] > 0.5:
         label = classes[1]
